@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/*!
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+:root {
+  --blue: #03a9f4;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #ED5564;
+  --orange: #fd7e14;
+  --yellow: #FCCE54;
+  --green: #7dc855;
+  --teal: #20c997;
+  --cyan: #78BCEE;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #03a9f4;
+  --secondary: #6c757d;
+  --success: #7dc855;
+  --info: #78BCEE;
+  --warning: #FCCE54;
+  --danger: #ED5564;
+  --light: #f8f9fa;
+  --dark: #272C33;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.valid-tooltip {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  display: none;
+  max-width: 100%;
+  padding: 1rem;
+  margin-top: .1rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(125,200,85,.8);
+  border-radius: .2rem;
+}
+
+.was-validated .form-control:valid {
+  border-color: #7dc855;
+}
+
+.was-validated .form-control:valid:focus {
+  border-color: #7dc855;
+  box-shadow: 0 0 0 .2rem rgba(125,200,85,.25);
+}
+
+.was-validated .form-control:valid~.valid-tooltip {
+  display: block;
+}
+
+.was-validated .custom-control-input:valid~.valid-tooltip {
+  display: block;
+}
+
+.invalid-tooltip {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  display: none;
+  max-width: 100%;
+  padding: 1rem;
+  margin-top: .1rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: #fff;
+  background-color: rgba(237,85,100,.8);
+  border-radius: .2rem;
+}
+
+.was-validated .form-control:invalid {
+  border-color: #ed5564;
+}
+
+.was-validated .form-control:invalid:focus {
+  border-color: #ed5564;
+  box-shadow: 0 0 0 .2rem rgba(237,85,100,.25);
+}
+
+.was-validated .form-control:invalid~.invalid-tooltip {
+  display: block;
+}
+
+.was-validated .custom-control-input:invalid~.invalid-tooltip {
+  display: block;
+}
+
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
